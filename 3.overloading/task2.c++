@@ -9,14 +9,17 @@ class A{
 };
 class B{
     public:
+ 
     void function(){
+           A obj;
         cout<<"B";
+        obj.function();
     }
 };
 int main(){
-    A a;
+
     B b;
-    a.function();
+    
     b.function();
     return 0;
 }
